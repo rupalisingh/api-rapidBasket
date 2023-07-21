@@ -36,8 +36,8 @@ exports.postOrder = catchAsync(async (req, res, next) => {
             coupon: coupon.id,
           }],
           mode: "payment", 
-          success_url: "http://localhost:3000/success", 
-          cancel_url: "http://localhost:3000/cancel", 
+          success_url: "http://dev-rapidbasket.netlify.app/success", 
+          cancel_url: "http://dev-rapidbasket.netlify.app/cancel", 
         }); 
         res.json({ id: session.id }); 
       } else {
